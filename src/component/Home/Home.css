@@ -1,0 +1,73 @@
+.home-container {
+    width: 780px;
+    margin: auto;
+    text-align: center;
+}
+.home-container .header{
+    background: linear-gradient(#1c1717,#5e5e68);
+    padding:36px 8px;
+    margin: 10px 0px;
+    color: #ffffff;
+}
+.home-container .header h1{
+    padding-bottom: 24px;
+}
+.home-container #audio{
+    width: 100%;
+}
+.home-container .surah .surah-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.home-container .surah .surah-info .surah-name {
+    flex-basis: calc(100% - 70px);
+    background: #e7e7e7;
+    margin: 8px 0px;
+    padding: 10px 6px;
+}
+
+.home-container .surah .surah-info .surah-name h4 {
+    text-align: start;
+    margin: 2px 0px;
+    font-weight: 400;
+}
+
+.home-container .surah .surah-info .surah-number {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #e7e7e7;
+    border-radius: 50%;
+}
+
+.home-container .surah .surah-info>div::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 54px;
+    transform: translateY(-50%);
+    border: 8px solid transparent;
+    border-right-color: #e7e7e7;
+}
+.home-container .surah .surah-info:hover>div::after{
+    border-right-color: #c1bebe;
+}
+.home-container .surah .surah-info:hover .surah-name,
+.home-container .surah .surah-info:hover .surah-number{
+    background: #c1bebe;
+}
+.home-container .loading-img{
+    width:300px;
+    margin: auto;
+}
+@media(max-width:780px){
+    .home-container {
+        width: 94%;
+        margin: auto;
+    }
+}
